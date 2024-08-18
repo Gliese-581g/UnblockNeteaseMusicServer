@@ -22,4 +22,4 @@ WORKDIR /app
 # 配置端口
 EXPOSE 8080 8081
 # 使用严格模式、修改音源列表
-ENTRYPOINT ["node", "app.js -s -o pyncmd kuwo kugou bilibili"]
+ENTRYPOINT ["node", "app.js", "-s", "-o", "pyncmd", "kuwo", "kugou", "bilibili"]
