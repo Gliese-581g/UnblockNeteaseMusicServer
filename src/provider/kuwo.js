@@ -65,7 +65,8 @@ const track = (id) => {
 	const url = crypto.kuwoapi
 		? 'http://mobi.kuwo.cn/mobi.s?f=kuwo&q=' +
 			crypto.kuwoapi.encryptQuery(
-				'corp=kuwo&source=kwplayer_ar_1.1.9_oppo_118980_320.apk&p2p=1&type=convert_url2&sig=0&format=' +
+				// 酷我源依赖的包名（https://github.com/UnblockNeteaseMusic/server/issues/1415）
+				'corp=kuwo&source=kwplayercar_ar_6.3.9.40_C_APK_guanwang.apk&p2p=1&type=convert_url2&sig=0&format=' +
 					['flac', 'mp3']
 						.slice(select.ENABLE_FLAC ? 0 : 1)
 						.join('|') +
